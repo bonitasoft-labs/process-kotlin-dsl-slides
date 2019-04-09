@@ -1,0 +1,13 @@
+== Kotlin dsl
+
+=== Kotlin lang
+
+kotlin is...
+
+=== Kotlin make writing DSL easy
+
+* Extensions
+* infix
+* Lambda as last parameter
+
+=== This makes Kotlin the perfect language for DSL

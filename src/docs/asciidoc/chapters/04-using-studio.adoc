@@ -1,0 +1,36 @@
+== Application bases on business process
+
+=== Studio to design processes
+
+image::bonita-devices.png[]
+
+=== Demo
+
+import application in studio + start
+
+
+=== Pros of using the full platform
+
+** Marketing keywords here **
+
+[%step]
+* Visual representation of the process
+* The platform handle the full application
+** User interfaces
+** Business data in a separated database
+** Adminitration interface of the process
+** Deployment of new versions
+* Low code development
+* Platform cluster for HA
+
+=== Cons 
+
+[%step]
+* Need to install a platform
+* Low code / No code == a lot of click
+* Source code management: doing diff of diagrams
+* Custom application code separated from process business logic
+
+=== How to solve these
+
+Processes can be created using the Java client

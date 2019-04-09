@@ -1,0 +1,27 @@
+
+== Process using java api
+
+=== Create processes using Bonita Java api
+
+[source, java]
+---
+code example
+---
+
+=== Start an engine
+
+[source, java]
+---
+code example
+---
+
+=== Deploy the process and run it
+
+[source, java]
+---
+code example
+---
+
+=== Not easy!
+
+--> use something more descriptive and easier to read

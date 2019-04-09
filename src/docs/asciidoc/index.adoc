@@ -1,0 +1,55 @@
+:revnumber: {project-version}
+:example-caption!:
+ifndef::imagesdir[:imagesdir: images]
+ifndef::sourcedir[:sourcedir: ../java]
+:navigation:
+:menu:
+:status:
+:title-slide-background-image: title.png
+:title-slide-transition: zoom
+:title-slide-transition-speed: fast
+:icons: font
+
+= : A Kotlin DSL to code business process
+
++++<h2>+++
+Inside a Spring boot application
++++</h2>+++
+
+Baptiste Mesta (@baptistemesta) - Bonitasoft
+
+== About me
+
+[%step]
+* Baptiste Mesta
+* Dev @ Bonitasoft for 10 years
+** BPM Execution engine
+** Developer tooling
+** IA/Analytics module
+
+include::chapters/01-bonita-presentation.adoc[]
+
+include::chapters/02-bonita-platform.adoc[]
+
+include::chapters/03-the-use-case.adoc[]
+
+include::chapters/04-using-studio.adoc[]
+
+include::chapters/05-using-java-api.adoc[]
+
+include::chapters/06-kotlin-dsl.adoc[]
+
+include::chapters/07-using-kotlin-dsl.adoc[]
+
+include::chapters/08-embedded-engine.adoc[]
+
+include::chapters/09-connect-platform.adoc[]
+
+include::chapters/10-integration-use-cases.adoc[]
+
+== Conclusion
+
+=== TODO
+=== Thank you
+image::end.png[background, size=cover]
+

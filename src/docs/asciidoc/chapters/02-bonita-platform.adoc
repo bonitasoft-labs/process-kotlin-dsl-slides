@@ -1,0 +1,33 @@
+== Bonita platform
+
+image::platform-pres.png[width=300,float="right",align="center"]
+
+[%notitle]
+=== What is it?
+
+Bonita - A platform to create digital customer and employee experiences
+
+* Built enterprise-grade apps connecting UI’s and Business Processes for better UX’s.
+** Collaborative development of processes, Ui’s and data
+** BPM foundation enables model-driven app development 
+** Visual or completely custom-coded UI design 
+** Adaptive Case Management
+** Multiple extension points and frameworks for developers
+
+
+
+[%notitle]
+=== What is it?
+
+
+* Agile development supports continuous delivery and intelligent continuous improvement - on-premise and in the cloud
+** Iterative experimentation and continuous improvement
+** Includes tools and frameworks to accelerates continuous integration and cloud deployment
+** Enhanced human intelligence and decision automation with machine learning algorithms
+
+
+
+[%notitle]
+=== Architecture
+
+image::architecture.svg[canvas,size=contain]

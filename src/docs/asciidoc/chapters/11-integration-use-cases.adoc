@@ -1,0 +1,17 @@
+== Integration use cases
+
+=== Standalone app with REST APIs
+
+Diagram
+
+=== Standalone app with REST APIs + message to e.g. Kafka
+
+Diagram
+
+=== Add some behavior on event based app
+
+Diagram
+
+=== Process is part one of the services of the app
+
+Diagram
