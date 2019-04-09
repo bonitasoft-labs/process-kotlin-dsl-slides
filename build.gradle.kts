@@ -4,5 +4,5 @@ plugins {
 
 presentation {
     githubUserName.set("baptistemesta")
-    githubRepoName.set("process-kotlin-slides")
+    githubRepoName.set("process-kotlin-dsl-slides")
 }
