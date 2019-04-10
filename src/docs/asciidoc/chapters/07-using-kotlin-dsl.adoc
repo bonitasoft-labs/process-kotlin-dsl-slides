@@ -2,6 +2,5 @@
 
 === Create the process
 
-image::loan-request.png[canvas,size=contain]
-
+image::loan-request.png[]
 

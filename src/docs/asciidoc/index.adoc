@@ -43,9 +43,11 @@ include::chapters/07-using-kotlin-dsl.adoc[]
 
 include::chapters/08-embedded-engine.adoc[]
 
-include::chapters/09-connect-platform.adoc[]
+include::chapters/09-interaction-with-the-process.adoc[]
 
-include::chapters/10-integration-use-cases.adoc[]
+include::chapters/10-connect-platform.adoc[]
+
+include::chapters/11-integration-use-cases.adoc[]
 
 == Conclusion
 

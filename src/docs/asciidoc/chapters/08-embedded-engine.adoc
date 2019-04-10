@@ -1,17 +1,9 @@
 == Embedded engine
 
-=== Integrate the execution engine to run our process
+=== Integrate the execution engine
 
 DEMO
 
-=== Run process in the application
-
-DEMO
-
-=== Use components inside our processes
-
-DEMO
-
-=== Expose Apis to interact with our process
+=== Deploy the process
 
 DEMO

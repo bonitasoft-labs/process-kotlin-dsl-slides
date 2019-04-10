@@ -52,5 +52,20 @@ infix fun Int.shl(x: Int): Int { ... }
 1.shl(2)
 ----
 
+=== Kotlin makes writing DSL easy
+
+[source,kotlin]
+----
+html {
+    head {
+        title {+"Some title"}
+    }
+    body {
+        h1 {+"Some title"}
+        p  {+"Some text"}
+        a(href = "http://kotlinlang.org") {+"Kotlin"}
+    }
+}
+----
 
 === This makes Kotlin the perfect language for DSL

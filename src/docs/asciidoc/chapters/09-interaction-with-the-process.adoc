@@ -1,17 +1,9 @@
-== Embedded engine
+== Define interactions
 
-=== Integrate the execution engine to run our process
-
-DEMO
-
-=== Run process in the application
+=== Rest APIs to interact with the process
 
 DEMO
 
 === Use components inside our processes
-
-DEMO
-
-=== Expose Apis to interact with our process
 
 DEMO

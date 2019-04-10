@@ -2,16 +2,16 @@
 
 === Standalone app with REST APIs
 
-Diagram
+What we did: add a diagram
 
-=== Standalone app with REST APIs + message to e.g. Kafka
+=== Standalone app with REST APIs + Async message communications
 
-Diagram
+In the same diagram, add BPMN message to external things
 
-=== Add some behavior on event based app
+=== Add behavior on event based app
 
-Diagram
+New diagram with catch BPMN messages that react to events in an application
 
-=== Process is part one of the services of the app
+=== Processes as "micro" services
 
-Diagram
+Each application is a process and interact with each others usings BPMN messages

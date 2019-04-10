@@ -1,6 +1,6 @@
 == Monitor and Administrate
 
-=== Connect Bonita portal
+=== Administration using the Bonita portal
 
 DEMO
 
