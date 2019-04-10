@@ -1,27 +1,114 @@
 
 == Process using java api
 
-=== Create processes using Bonita Java api
+=== Create process (1/2?)
 
-[source, java]
----
-code example
----
+[source,java]
+----
+ProcessDefinitionBuilder builder = new ProcessDefinitionBuilder()
+.createNewInstance("RequestLoan", "1.0");
+builder.addContract()
+        .addInput("loanType", Type.TEXT, "the type of the loan")
+        .addInput("amount", Type.LONG, "the amount of the loan");
+builder.addActor("Requester", true);
+builder.addActor("Validator");
+builder.addBooleanData("accepted", null);
+builder.addStartEvent("Start request");
+UserTaskDefinitionBuilder reviewRequest = 
+    builder.addUserTask("Review request", "Validator");
+reviewRequest.addContract()
+        .addInput("accept", Type.BOOLEAN, "accept the loan?");
+[...]
+----
+
+=== Create process (2/3??)
+
+[source,java]
+----
+                new ExpressionBuilder()
+                    .createParameterExpression("serverUrl",
+                    "serverUrl",String.class.getName()),
+                new ExpressionBuilder().createEngineConstant(
+                    ExpressionConstants.INITIATOR)));
+builder.addUserTask("Sign contract", "Requester");
+builder.addEndEvent("Accepted");
+builder.addEndEvent("Rejected");
+builder.addTransition("Start request", "Review request");
+builder.addTransition("Review request", "isAccepted");
+builder.addTransition("isAccepted", "Sign contract", 
+    new ExpressionBuilder().createDataExpression("accepted",
+        Boolean.class.getName()));
+builder.addDefaultTransition("isAccepted", "Notify rejection");
+builder.addTransition("Sign contract", "Accepted");
+builder.addTransition("Notify rejection", "Rejected");
+[...]
+----
+
+
+=== Create process (3/???)
+
+[source,java]
+----
+reviewRequest.addOperation(new OperationBuilder()
+    .createSetDataOperation("accepted",
+        new ExpressionBuilder().createContractInputExpression(
+            "accept", Boolean.class.getName())));
+builder.addGateway("isAccepted", GatewayType.EXCLUSIVE);
+builder.addAutomaticTask("Notify rejection")
+        .addConnector("sendRejection","notifyConnector","1.0", 
+            ConnectorEvent.ON_ENTER)
+        .addInput("url", 
+            new ExpressionBuilder()
+                .createGroovyScriptExpression("script",
+                "serverUrl+'/reject/'+userId", 
+                String.class.getName(),
+[...]
+----
+
 
 === Start an engine
 
 [source, java]
----
-code example
----
+----
+APITypeManager.setAPITypeAndParams(ApiAccessType.LOCAL, emptyMap());
+String dbVendor = setSystemPropertyIfNotSet("sysprop.bonita.db.vendor", "h2");
+applicationContext = new ClassPathXmlApplicationContext("classpath:local-server.xml");
+applicationContext.refresh();
+PlatformSetup platformSetup = PlatformSetupAccessor.getPlatformSetup();
+platformSetup.init();
+PlatformLoginAPI platformLoginAPI = getPlatformLoginAPI();
+PlatformSession session = platformLoginAPI.login("platformAdmin", "platform");
+PlatformAPI platformAPI = getPlatformAPI(session);
+if (!platformAPI.isPlatformInitialized()) {
+    platformAPI.initializePlatform();
+    platformAPI.startNode();
+}
+platformAPI.startNode();
+platformLoginAPI.logout(session);
+----
 
 === Deploy the process and run it
 
 [source, java]
----
-code example
----
+----
+DesignProcessDefinition designProcessDefinition = processBuilder
+    .done();
+ProcessDefinition definition = getProcessAPI()
+    .deploy(new BusinessArchiveBuilder().
+        createNewBusinessArchive()
+        .setProcessDefinition(designProcessDefinition)
+        .done());
+getProcessAPI().addGroupToActor("Validator", validatorGroupId, 
+    definition);
+getProcessAPI().addGroupToActor("Requestor", requestorGroupId, 
+    definition);
+getProcessAPI().enableProcess(definition.getId());
 
-=== Not easy!
+getProcessAPI().startProcessWithInputs(definition.getId(),[...])
+----
 
---> use something more descriptive and easier to read
+=== It's possible
+
+[%step]
+* Verbose
+* Not easy to read

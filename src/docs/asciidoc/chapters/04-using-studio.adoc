@@ -11,26 +11,23 @@ import application in studio + start
 
 === Pros of using the full platform
 
-** Marketing keywords here **
-
 [%step]
 * Visual representation of the process
+* Low code development
 * The platform handle the full application
 ** User interfaces
 ** Business data in a separated database
-** Adminitration interface of the process
-** Deployment of new versions
-* Low code development
+** Adminitration interface of the processes / users
 * Platform cluster for HA
 
-=== Cons 
+=== As a developer I want all as code and all in the same place
 
 [%step]
-* Need to install a platform
-* Low code / No code == a lot of click
-* Source code management: doing diff of diagrams
-* Custom application code separated from process business logic
+* I want no setup of a platform
+* I want everything as code (no clicking)
+* I prefere code than diagrams
+* I want my business logic in one place
 
-=== How to solve these
+=== An other approach
 
-Processes can be created using the Java client
+Embed processes and Execution engine in our application

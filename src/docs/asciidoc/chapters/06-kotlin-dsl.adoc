@@ -1,13 +1,56 @@
-== Kotlin dsl
+== Kotlin DSL
 
 === Kotlin lang
 
 kotlin is...
+[%step]
+* cross-platform
+* statically typed
+* designed to interoperate fully with Java
+* a JVM language (it first)
+* concise
 
-=== Kotlin make writing DSL easy
+=== Kotlin makes writing DSL easy
 
-* Extensions
-* infix
-* Lambda as last parameter
+.Function literals with receiver
+[source,kotlin]
+----
+fun html(init: HTML.() -> Unit): HTML {
+    val html = HTML()
+    html.init()
+    return html
+}
+//gives
+html {
+ // ...
+}
+----
+
+=== Kotlin makes writing DSL easy
+
+.Extensions
+[source,kotlin]
+----
+operator fun String.unaryPlus() {
+    //do somthing with 'this'
+}
+//gives
+ title {+"XML encoding with Kotlin"}
+----
+
+=== Kotlin makes writing DSL easy
+
+.infix
+[source,kotlin]
+----
+infix fun Int.shl(x: Int): Int { ... }
+
+// calling the function using the infix notation
+1 shl 2
+
+// is the same as
+1.shl(2)
+----
+
 
 === This makes Kotlin the perfect language for DSL

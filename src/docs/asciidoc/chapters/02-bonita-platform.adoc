@@ -1,6 +1,6 @@
 == Bonita platform
 
-image::platform-pres.png[width=300,float="right",align="center"]
+image::platform-pres.png[height=20%]
 
 [%notitle]
 === What is it?
