@@ -107,8 +107,10 @@ getProcessAPI().enableProcess(definition.getId());
 getProcessAPI().startProcessWithInputs(definition.getId(),[...])
 ----
 
-=== It's possible
+=== It's possible, but...
 
 [%step]
 * Verbose
 * Not easy to read
+
+=== We need something more descriptive

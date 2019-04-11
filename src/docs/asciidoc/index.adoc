@@ -51,7 +51,12 @@ include::chapters/11-integration-use-cases.adoc[]
 
 == Conclusion
 
-=== TODO
+[%step]
+* Kotlin icon:heart[] DSL
+* Integrate a BPM execution engine is not hard anymore 
+* Processes as code is an option for small/medium ones
+* Feedback on the DSL are welcome! (@experimental)
+
 === Thank you
 image::end.png[background, size=cover]
 

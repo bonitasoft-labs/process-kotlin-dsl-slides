@@ -6,13 +6,13 @@ kotlin is...
 [%step]
 * cross-platform
 * statically typed
+* executable on the JVM
 * designed to interoperate fully with Java
-* a JVM language (it first)
 * concise
 
 === Kotlin makes writing DSL easy
 
-.Function literals with receiver
+Function literals with receiver
 [source,kotlin]
 ----
 fun html(init: HTML.() -> Unit): HTML {
@@ -28,7 +28,7 @@ html {
 
 === Kotlin makes writing DSL easy
 
-.Extensions
+Extension Functions
 [source,kotlin]
 ----
 operator fun String.unaryPlus() {
@@ -40,7 +40,7 @@ operator fun String.unaryPlus() {
 
 === Kotlin makes writing DSL easy
 
-.infix
+infix
 [source,kotlin]
 ----
 infix fun Int.shl(x: Int): Int { ... }

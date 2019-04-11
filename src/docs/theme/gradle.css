@@ -474,3 +474,11 @@ section.has-dark-background h3 {
 .hljs-type {
     color: #a71d5d
 }
+
+/***************
+* icons
+****************/
+
+.fa-heart {
+    color: red
+}
