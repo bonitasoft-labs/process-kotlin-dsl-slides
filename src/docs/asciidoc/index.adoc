@@ -10,7 +10,7 @@ ifndef::sourcedir[:sourcedir: ../java]
 :title-slide-transition-speed: fast
 :icons: font
 
-= : A Kotlin DSL to code business process
+= A Kotlin DSL to code business process
 
 +++<h2>+++
 Inside a Spring boot application

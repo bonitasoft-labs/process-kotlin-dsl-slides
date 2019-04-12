@@ -19,7 +19,7 @@ import application in studio + start
 * Platform to administrate processes / users
 * Out of the box user case list
 
-=== As a developer I want all as code and all in the same place
+=== As a developer...
 
 [%step]
 * I want no setup of a platform
