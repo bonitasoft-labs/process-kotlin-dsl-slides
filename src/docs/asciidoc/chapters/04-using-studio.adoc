@@ -1,4 +1,4 @@
-== Application bases on business process
+== Application based on business processes
 
 === Studio to design processes
 
@@ -18,6 +18,9 @@ import application in studio + start
 * Low code development
 * Platform to administrate processes / users
 * Out of the box user case list
+* Developer friendly extensions
+** Deployable REST Apis
+** Connectors for other systems
 
 === As a developer...
 
@@ -26,6 +29,7 @@ import application in studio + start
 * I want everything as code (no clicking)
 * I prefere code than diagrams
 * I want my business logic in one place
+* I want it integrated to Spring boot
 
 === An other approach
 

@@ -3,12 +3,6 @@
 [%notitle]
 === Bonitasoft
 
-image::bonitasoft-timeline.svg[canvas,size=contain]
-
-
-[%notitle]
-=== Bonitasoft
-
 [%step]
 * Bonitasoft is the largest provider of open-source Business Process Management, Low-code and Digital Transformation software worldwide
 * Offices in Paris, San Francisco, New York, and R&D in Grenoble France

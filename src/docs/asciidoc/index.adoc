@@ -31,6 +31,8 @@ include::chapters/01-bonita-presentation.adoc[]
 
 include::chapters/02-bonita-platform.adoc[]
 
+include::chapters/11-integration-use-cases.adoc[]
+
 include::chapters/03-the-use-case.adoc[]
 
 include::chapters/04-using-studio.adoc[]
@@ -47,8 +49,6 @@ include::chapters/09-interaction-with-the-process.adoc[]
 
 include::chapters/10-connect-platform.adoc[]
 
-include::chapters/11-integration-use-cases.adoc[]
-
 == Conclusion
 
 [%step]
@@ -59,4 +59,10 @@ include::chapters/11-integration-use-cases.adoc[]
 
 === Thank you
 image::end.png[background, size=cover]
+
+link:https://www.bonitasoft.com/downloads[bonitasoft.com/downloads]
+
+link:https://baptistemesta.github.io/process-kotlin-dsl-slides[baptistemesta.github.io/process-kotlin-dsl-slides]
+
+link:https://github.com/baptistemesta/process-kotlin-dsl-request-loan[github.com/baptistemesta/process-kotlin-dsl-request-loan]
 
