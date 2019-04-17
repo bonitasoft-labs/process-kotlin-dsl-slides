@@ -8,15 +8,12 @@ image::bonita-devices.png[]
 === Pros of using the full platform
 
 [%step]
+* Low code development
 * Visual representation of the process
 * Business data editor
 * WYSIWYG editor to create pages and forms
-* Low code development
 * Platform to administrate processes / users
 * Out of the box user case list
-* Developer friendly extensions
-** Deployable REST Apis
-** Connectors for other systems
 
 === As a developer...
 
