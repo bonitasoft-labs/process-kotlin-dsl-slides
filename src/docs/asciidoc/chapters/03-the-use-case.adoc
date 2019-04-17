@@ -1,16 +1,17 @@
 == Our use case
 
+
 === Loan request application
-
-image::loan-request.png[]
-
-
-=== Scenario
 
 [%step]
 * Requester start a request for a loan
 * Validator review this request
 * Validator choose to accept or reject this load
-* If the loan is rejected, we notify the Requester
+* If the loan is rejected, we notify the Requester via email
 * If the loan is accepted, the requester need to sign the contract
-* The account is credited
+
+=== Loan request application
+
+image::loan-request.png[width=100%,height=100%]
+
+

@@ -4,10 +4,6 @@
 
 image::bonita-devices.png[]
 
-=== Demo
-
-import application in studio + start
-
 
 === Pros of using the full platform
 
@@ -25,9 +21,8 @@ import application in studio + start
 === As a developer...
 
 [%step]
-* I want no setup of a platform
+* I want no setup of a platform (application server)
 * I want everything as code (no clicking)
-* I prefere code than diagrams
 * I want my business logic in one place
 * I want it integrated to Spring boot
 

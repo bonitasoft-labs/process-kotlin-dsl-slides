@@ -1,9 +1,7 @@
 == Monitor and Administrate
 
-=== Administration using the Bonita portal
+[%notitle]
+=== Architecture
 
-DEMO
 
-=== Monitor process execution
-
-DEMO
+image::archi_standalone.svg[canvas,size=contain]

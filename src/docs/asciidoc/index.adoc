@@ -31,23 +31,20 @@ include::chapters/01-bonita-presentation.adoc[]
 
 include::chapters/02-bonita-platform.adoc[]
 
-include::chapters/11-integration-use-cases.adoc[]
-
 include::chapters/03-the-use-case.adoc[]
 
 include::chapters/04-using-studio.adoc[]
 
 include::chapters/05-using-java-api.adoc[]
 
-include::chapters/06-kotlin-dsl.adoc[]
+include::chapters/06-embedded-engine.adoc[]
 
-include::chapters/07-using-kotlin-dsl.adoc[]
+include::chapters/07-kotlin-dsl.adoc[]
 
-include::chapters/08-embedded-engine.adoc[]
-
-include::chapters/09-interaction-with-the-process.adoc[]
+include::chapters/08-using-kotlin-dsl.adoc[]
 
 include::chapters/10-connect-platform.adoc[]
+
 
 == Conclusion
 
@@ -66,3 +63,6 @@ link:https://baptistemesta.github.io/process-kotlin-dsl-slides[baptistemesta.git
 
 link:https://github.com/baptistemesta/process-kotlin-dsl-request-loan[github.com/baptistemesta/process-kotlin-dsl-request-loan]
 
+
+
+include::chapters/11-integration-use-cases.adoc[]
