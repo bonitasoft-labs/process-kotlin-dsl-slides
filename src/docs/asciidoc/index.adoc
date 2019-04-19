@@ -35,9 +35,9 @@ include::chapters/03-the-use-case.adoc[]
 
 include::chapters/04-using-studio.adoc[]
 
-include::chapters/05-using-java-api.adoc[]
-
 include::chapters/06-embedded-engine.adoc[]
+
+include::chapters/05-using-java-api.adoc[]
 
 include::chapters/07-kotlin-dsl.adoc[]
 

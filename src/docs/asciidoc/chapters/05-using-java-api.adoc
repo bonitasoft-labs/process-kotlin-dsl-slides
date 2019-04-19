@@ -66,47 +66,6 @@ builder.addAutomaticTask("Notify rejection")
 ----
 
 
-=== Start an engine
-
-[source, java]
-----
-APITypeManager.setAPITypeAndParams(ApiAccessType.LOCAL, emptyMap());
-String dbVendor = setSystemPropertyIfNotSet("sysprop.bonita.db.vendor", "h2");
-applicationContext = new ClassPathXmlApplicationContext("classpath:local-server.xml");
-applicationContext.refresh();
-PlatformSetup platformSetup = PlatformSetupAccessor.getPlatformSetup();
-platformSetup.init();
-PlatformLoginAPI platformLoginAPI = getPlatformLoginAPI();
-PlatformSession session = platformLoginAPI.login("platformAdmin", "platform");
-PlatformAPI platformAPI = getPlatformAPI(session);
-if (!platformAPI.isPlatformInitialized()) {
-    platformAPI.initializePlatform();
-    platformAPI.startNode();
-}
-platformAPI.startNode();
-platformLoginAPI.logout(session);
-----
-
-=== Deploy the process and run it
-
-[source, java]
-----
-DesignProcessDefinition designProcessDefinition = processBuilder
-    .done();
-ProcessDefinition definition = getProcessAPI()
-    .deploy(new BusinessArchiveBuilder().
-        createNewBusinessArchive()
-        .setProcessDefinition(designProcessDefinition)
-        .done());
-getProcessAPI().addGroupToActor("Validator", validatorGroupId, 
-    definition);
-getProcessAPI().addGroupToActor("Requestor", requestorGroupId, 
-    definition);
-getProcessAPI().enableProcess(definition.getId());
-
-getProcessAPI().startProcessWithInputs(definition.getId(),[...])
-----
-
 === It's possible, but...
 
 [%step]

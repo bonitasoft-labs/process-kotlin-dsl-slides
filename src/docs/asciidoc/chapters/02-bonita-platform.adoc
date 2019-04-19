@@ -12,7 +12,3 @@ image::platform-pres.png[width=350,height=350]
 * Portal to administrate processes/applications
 * Addons
 
-[%notitle]
-=== Architecture
-
-image::architecture.svg[canvas,size=contain]

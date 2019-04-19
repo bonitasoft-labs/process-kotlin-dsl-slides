@@ -23,6 +23,6 @@ image::bonita-devices.png[]
 * I want my business logic in one place
 * I want it integrated to Spring boot
 
-=== An other approach
+=== Another approach
 
 Embbed processes and Execution engine in our application
