@@ -1,0 +1,27 @@
+== Why using a DSL?
+
+
+=== Validation
+image::dsl_validation.png[width=100%,height=100%]
+
+=== Discovery
+
+image::dsl_discovery.png[width=60%,height=60%]
+
+
+=== Speak the language of your domain
+
+[source,kotlin]
+----
+when `a ci job` fails { job ->
+    `send message on slack` {
+        channel = "R&D"
+        message = "The job $job has failed! Fix it :whip:"
+    }
+}
+----
+
+
+
+
+

@@ -27,21 +27,54 @@ Baptiste Mesta (@baptistemesta) - Bonitasoft
 ** Developer tooling
 ** IA/Analytics module
 
+//intro bonita
 include::chapters/01-bonita-presentation.adoc[]
 
-include::chapters/02-bonita-platform.adoc[]
 
+// What is a DSL
+
+include::chapters/what-is-a-dsl.adoc[]
+
+
+
+//A dsl for processes
+
+include::chapters/why-a-dsl-for-processes.adoc[]
+
+
+// Prerequisites: 
 include::chapters/03-the-use-case.adoc[]
 
 include::chapters/04-using-studio.adoc[]
 
-include::chapters/06-embedded-engine.adoc[]
 
+// DSL for processes
 include::chapters/05-using-java-api.adoc[]
 
 include::chapters/07-kotlin-dsl.adoc[]
 
 include::chapters/08-using-kotlin-dsl.adoc[]
+
+
+include::chapters/why-using-a-dsl.adoc[]
+
+
+// execute this dsl
+
+//   first need a running bpm execution engine
+
+include::chapters/06-embedded-engine.adoc[]
+
+// demo run it
+
+
+//  trash it: include::chapters/02-bonita-platform.adoc[]
+
+// Extensible DSL: use extension function of kotlin
+
+
+
+
 
 include::chapters/10-connect-platform.adoc[]
 

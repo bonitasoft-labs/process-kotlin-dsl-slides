@@ -1,0 +1,59 @@
+== What is a DSL?
+
+
+=== Domain specific language
+
+[quote, Martin Fowler]
+The basic idea of a domain specific language (DSL) is a computer language that's targeted to a particular kind of problem, rather than a general purpose language that's aimed at any kind of software problem.
+
+
+=== External DSLs
+
+[%step]
+* Not backed by a language
+* Define your grammar
+* Create your tools to validate
+* "Compile" for your target domain
+
+
+=== Internal DSLs
+
+[%step]
+* Backed by a language
+* Limited to the features of the language
+* Re-use tooling of the language
+
+
+=== We already uses DSLs
+
+Spock framework
+[source,groovy]
+----
+def "should return user given its id and tenant id"() {
+    given:
+    def expectedUser = aUser(new User(id: 1))
+    when:
+    def user = repository.findById(1).get()
+    then:
+    user == expectedUser
+}
+----
+
+=== We already uses DSLs
+
+Gradle DSL
+[source,kotlin]
+----
+plugins {
+    `kotlin-dsl`
+}
+repositories {
+    jcenter()
+}
+dependencies {
+    compile("commons-httpclient:commons-httpclient:3.1")
+}
+----
+
+
+

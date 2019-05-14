@@ -1,6 +1,5 @@
 == Our use case
 
-
 === Loan request application
 
 [%step]
